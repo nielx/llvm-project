@@ -47,7 +47,9 @@
 #include "llvm/Support/raw_ostream.h"
 #include <algorithm>
 #include <string>
+#define _BSD_SOURCE
 #include <sysexits.h>
+#undef _BSD_SOURCE
 #ifdef HAVE_BACKTRACE
 # include BACKTRACE_HEADER         // For backtrace().
 #endif
